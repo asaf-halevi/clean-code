@@ -1,6 +1,6 @@
 package ocp.after;
 
-public interface Animal2 {
-	
-	public void eat();
+public abstract class Animal2 {
+
+	public abstract void eat();
 }

@@ -1,6 +1,6 @@
 package ocp.after;
 
-public class Spider2 implements Animal2{
+public class Spider2 extends Animal2{
 
 	private String name;
 
