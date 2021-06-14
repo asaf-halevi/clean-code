@@ -13,10 +13,8 @@ public class SingleResponsibilityPrincipleAfter {
             e.printStackTrace();
             return;
         }
-
         int result = calcResult(calcInfo);
-
-        System.out.println(getResultAsString(calcInfo, result));
+        printResult(calcInfo, result);
     }
 
     private CalcInfo getInfo() throws InvalidAlgorithmParameterException {
@@ -54,10 +52,6 @@ public class SingleResponsibilityPrincipleAfter {
         return result;
     }
 
-    protected String getResultAsString(CalcInfo calcInfo, int result) {
-        return "\n" + calcInfo.getA() + " " + calcInfo.getAction() + " " + calcInfo.getB() + " = " + result;
-    }
-
     protected int subtract(int a, int b) {
         return a - b;
     }
@@ -76,6 +70,14 @@ public class SingleResponsibilityPrincipleAfter {
 
     protected int modulus(int a, int b) {
         return a % b;
+    }
+
+    private void printResult(CalcInfo calcInfo, int result) {
+        System.out.println(getResultAsString(calcInfo, result));
+    }
+
+    protected String getResultAsString(CalcInfo calcInfo, int result) {
+        return "\n" + calcInfo.getA() + " " + calcInfo.getAction() + " " + calcInfo.getB() + " = " + result;
     }
 
     public static void main(String[] args) throws InvalidAlgorithmParameterException {
