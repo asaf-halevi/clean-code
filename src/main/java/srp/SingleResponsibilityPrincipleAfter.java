@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class SingleResponsibilityPrincipleAfter {
 
-    public void peformActions () {
+    public void performActions() {
         CalcInfo calcInfo = null;
         try {
             calcInfo = getInfo ();
@@ -80,6 +80,6 @@ public class SingleResponsibilityPrincipleAfter {
 
     public static void main (String[] args) throws InvalidAlgorithmParameterException {
         SingleResponsibilityPrincipleAfter calculator = new SingleResponsibilityPrincipleAfter ();
-        calculator.peformActions ();
+        calculator.performActions();
     }
 }
