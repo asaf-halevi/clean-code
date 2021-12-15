@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class SingleResponsibilityPrincipleAfter {
 
     public void performActions() {
-        CalcInfo calcInfo = null;
+        CalcInfo calcInfo;
         try {
             calcInfo = getInfo();
         } catch (InvalidAlgorithmParameterException e) {
@@ -30,7 +30,7 @@ public class SingleResponsibilityPrincipleAfter {
         return new CalcInfo(a, b, action.charAt(0));
     }
 
-    private int calcResult(CalcInfo calcInfo) {
+    protected int calcResult(CalcInfo calcInfo) {
         int result = 0;
         switch (calcInfo.getAction()) {
             case CalcInfo.ADD:

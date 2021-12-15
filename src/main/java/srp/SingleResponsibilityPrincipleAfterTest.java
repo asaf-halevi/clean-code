@@ -52,6 +52,41 @@ public class SingleResponsibilityPrincipleAfterTest {
     }
 
     @Test
+    public void calcResultAdd() throws InvalidAlgorithmParameterException {
+        CalcInfo info = new CalcInfo(1, -1, CalcInfo.ADD);
+        int actual = calculator.calcResult(info);
+        assertEquals(0, actual);
+    }
+
+    @Test
+    public void calcResultSubtract() throws InvalidAlgorithmParameterException {
+        CalcInfo info = new CalcInfo(1, -1, CalcInfo.SUBTRACT);
+        int actual = calculator.calcResult(info);
+        assertEquals(2, actual);
+    }
+
+    @Test
+    public void calcResultDivide() throws InvalidAlgorithmParameterException {
+        CalcInfo info = new CalcInfo(10, 3, CalcInfo.DIVIDE);
+        int actual = calculator.calcResult(info);
+        assertEquals(3, actual);
+    }
+
+    @Test
+    public void calcResultModulus() throws InvalidAlgorithmParameterException {
+        CalcInfo info = new CalcInfo(10, 3, CalcInfo.MODULUS);
+        int actual = calculator.calcResult(info);
+        assertEquals(1, actual);
+    }
+
+    @Test
+    public void calcResultMultiply() throws InvalidAlgorithmParameterException {
+        CalcInfo info = new CalcInfo(10, 3, CalcInfo.MULTIPLY);
+        int actual = calculator.calcResult(info);
+        assertEquals(30, actual);
+    }
+
+    @Test
     public void getResultAsStringTest() throws InvalidAlgorithmParameterException {
         CalcInfo calcInfo = new CalcInfo(1, 1, CalcInfo.ADD);
         String actual = calculator.getResultAsString(calcInfo, 2);
