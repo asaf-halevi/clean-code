@@ -5,21 +5,19 @@ import java.util.List;
 
 public class ZooKeeper2 {
 
-	private List<Animal2> animals;
+    private final List<Animal2> animals;
 
-	public ZooKeeper2() {
+    public ZooKeeper2() {
+        animals = new ArrayList<>();
+    }
 
-		animals = new ArrayList<>();
-	}
+    public void addAnimal(Animal2 animal) {
+        animals.add(animal);
+    }
 
-	public void addAnimal(Animal2 animal) {
-
-		animals.add(animal);
-	}
-
-	public void feedAnimals() {
-		for (Animal2 animal : animals) {
-			animal.eat();
-		}
-	}
+    public void feedAnimals() {
+        for (Animal2 animal : animals) {
+            animal.eat();
+        }
+    }
 }

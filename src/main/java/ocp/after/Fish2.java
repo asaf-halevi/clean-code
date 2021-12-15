@@ -1,23 +1,12 @@
 package ocp.after;
 
-public class Fish2 extends Animal2{
+public class Fish2 extends Animal2 {
 
-	private String name;
+    public Fish2(String name) {
+        super(name);
+    }
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public Fish2(String name) {
-		this.name = name;
-	}
-
-	public void eat() {
-
-		System.out.println(this.getName() + " eats smaller fish");
-	}
+    public void eat() {
+        System.out.println(this.getName() + " eats smaller fish");
+    }
 }
