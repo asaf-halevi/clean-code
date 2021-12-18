@@ -1,17 +1,17 @@
 package srp;
 
-import static org.junit.Assert.assertEquals;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 
 import java.security.InvalidAlgorithmParameterException;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SingleResponsibilityPrincipleAfterTest {
 
     private static SingleResponsibilityPrincipleAfter calculator;
 
-    @BeforeClass
+    @BeforeAll
     public static void beforeTests() {
         calculator = new SingleResponsibilityPrincipleAfter();
     }

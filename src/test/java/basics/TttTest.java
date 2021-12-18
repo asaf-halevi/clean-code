@@ -1,17 +1,15 @@
 package basics;
 
-import basics.Board;
-import basics.Ttt;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-import static org.junit.Assert.assertFalse;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class TttTest {
 
     private static final char PLAYER1 = 'X';
-    private static Ttt t = new Ttt();
-//    private static TttSolution t = new TttSolution();
+    private final static Ttt t = new Ttt();
+//    private final static TttSolution t = new TttSolution();
 
     @Test
     public void testR0() {
