@@ -10,7 +10,9 @@ public class TttSolution {
 	private static final int BOARD_SIZE = 3;
 
 	public boolean isVictory(Board board, char currentPlayer) {
-		return (isHorizontalVictory(board.getBoard(), currentPlayer)) || (isVerticalVictory(board.getBoard(), currentPlayer)) || (isDiagonalVictory(board.getBoard(), currentPlayer));
+		return (isHorizontalVictory(board.getBoard(), currentPlayer)) ||
+				(isVerticalVictory(board.getBoard(), currentPlayer)) ||
+				(isDiagonalVictory(board.getBoard(), currentPlayer));
 	}
 
 	private boolean isHorizontalVictory(char[][] board, char currentPlayer) {
