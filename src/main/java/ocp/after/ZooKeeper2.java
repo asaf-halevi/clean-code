@@ -15,6 +15,12 @@ public class ZooKeeper2 {
         animals.add(animal);
     }
 
+    public void putAnimalsInZoo(Animal2[] addAnimals) {
+        for (Animal2 animal : addAnimals) {
+            addAnimal(animal);
+        }
+    }
+
     public void feedAnimals() {
         for (Animal2 animal : animals) {
             animal.eat();
