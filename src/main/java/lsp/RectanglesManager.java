@@ -11,12 +11,12 @@ public class RectanglesManager {
         rectangles.add(new Rectangle(6, 7));
 
         //Invalid child
-//        rectangles.add(new BadSquare(50));//length will not be accepted
-//        rectangles.add(new BadSquare(9));//invalid parameter will be returned
+//        rectangles.add(new BadSquare(50));//valid parameter will NOT be accepted
+//        rectangles.add(new BadSquare(9));//invalid parameter will be accepted
 
         //Valid child
-//        rectangles.add(new GoodSquare(6, 7));
-//        rectangles.add(new GoodSquare(50, 10));
+//        rectangles.add(new GoodSquare(50));//valid parameter will be accepted
+//        rectangles.add(new GoodSquare(9));//invalid parameter will NOT be accepted
 
         for (Rectangle r : rectangles) {
             System.out.println(r + " | perimeter: " + r.getPerimeter() + " | area: " + r.getArea());
