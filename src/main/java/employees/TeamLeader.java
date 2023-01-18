@@ -19,7 +19,7 @@ public class TeamLeader extends Employee implements IEmployee {
 	
 	@Override
 	public void managePeople() {
-		System.out.println("You do as i say!");	
+		System.out.println("You do as I say!");
 	}
 
 }
