@@ -1,6 +1,6 @@
 package lsp;
 
-public class GoodSquare extends Rectangle{
+public class GoodSquare extends Rectangle {
 
     public GoodSquare(float length) {
         super(length, length);
@@ -10,11 +10,13 @@ public class GoodSquare extends Rectangle{
         super(length, length);
     }
 
-    public float getPerimeter(){
-        return verifyPerimeter(4 * getLength());
+    @Override
+    public float getPerimeter() {
+        return 4 * getLength();
     }
 
-    public float getArea(){
+    @Override
+    public float getArea() {
         return getLength() * getLength();
     }
 
