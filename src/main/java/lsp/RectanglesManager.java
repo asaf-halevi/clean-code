@@ -10,7 +10,7 @@ public class RectanglesManager {
         rectangles.add(new Rectangle(3, 4));
         rectangles.add(new Rectangle(6, 7));
 
-        // replace with bad/good square
+        // replace with bad/good square (the new constructor MAY be used)
         rectangles.add(new Rectangle(10, 10));
         try {
             rectangles.add(new Rectangle(0, 0));
