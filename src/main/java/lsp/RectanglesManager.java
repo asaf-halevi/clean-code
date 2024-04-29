@@ -10,13 +10,9 @@ public class RectanglesManager {
         rectangles.add(new Rectangle(3, 4));
         rectangles.add(new Rectangle(6, 7));
 
-        //Invalid child
-//        rectangles.add(new BadSquare(50));//valid parameter will NOT be accepted
-//        rectangles.add(new BadSquare(9));//invalid parameter will be accepted
-
-        //Valid child
-//        rectangles.add(new GoodSquare(50));//valid parameter will be accepted
-//        rectangles.add(new GoodSquare(9));//invalid parameter will NOT be accepted
+        //replace with BadSquare / GoodSquare (and replace constructor)
+        //rectangles.add(new Rectangle(50, 50));//valid parameter will NOT be accepted
+        //rectangles.add(new Rectangle(0, 0));//invalid parameter will be accepted
 
         for (Rectangle r : rectangles) {
             System.out.println(r + " | perimeter: " + r.getPerimeter() + " | area: " + r.getArea());
