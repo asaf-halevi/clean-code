@@ -11,7 +11,7 @@ public class RectanglesManager {
         rectangles.add(new Rectangle(6, 7));
 
         //replace with BadSquare / GoodSquare (and replace constructor)
-        //rectangles.add(new Rectangle(50, 50));//valid parameter will NOT be accepted
+        //rectangles.add(new Rectangle(10, 10));//valid parameter will NOT be accepted
         //rectangles.add(new Rectangle(0, 0));//invalid parameter will be accepted
 
         for (Rectangle r : rectangles) {
