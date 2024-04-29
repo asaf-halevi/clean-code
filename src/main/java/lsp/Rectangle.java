@@ -5,6 +5,10 @@ public class Rectangle {
     private float length;
     private float width;
 
+    public Rectangle() {
+
+    }
+
     public Rectangle(float length, float width) {
         setLength(length);
         setWidth(width);
